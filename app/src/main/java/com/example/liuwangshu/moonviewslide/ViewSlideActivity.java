@@ -14,6 +14,6 @@ public class ViewSlideActivity extends AppCompatActivity {
         //使用视图动画使view滑动
 //        ObjectAnimator.ofFloat(mCustomView,"translationX",0,300).setDuration(1000).start();
         //使用Scroll来进行平滑移动
-        mCustomView.smoothScollTo(-400,0);
+        mCustomView.smoothScrollTo(-400,0);
     }
 }

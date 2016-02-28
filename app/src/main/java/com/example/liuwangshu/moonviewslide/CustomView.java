@@ -73,7 +73,7 @@ public class CustomView extends View {
 
         return true;
     }
-    public void smoothScollTo(int destX,int destY){
+    public void smoothScrollTo(int destX,int destY){
         int scrollX=getScrollX();
         int delta=destX-scrollX;
         //1000秒内滑向destX
