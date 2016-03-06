@@ -85,8 +85,9 @@ public class CustomView extends View {
         super.computeScroll();
         if(mScroller.computeScrollOffset()){
             ((View) getParent()).scrollTo(mScroller.getCurrX(),mScroller.getCurrY());
+            //通过不断的重绘不断的调用computeScroll方法
+            invalidate();
         }
-        //通过不断的重绘不断的调用computeScroll方法
-        invalidate();
+
     }
 }
